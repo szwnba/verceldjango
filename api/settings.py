@@ -73,12 +73,27 @@ WSGI_APPLICATION = "api.wsgi.app"
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
+#
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
+     'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'django',    #你的数据库名称
+            'USER': 'django',   #你的数据库用户名
+            'PASSWORD': "gtd123", #你的数据库密码
+            'HOST': '119.91.153.2', #你的数据库主机，留空默认为localhost
+            # 'HOST': '192.168.31.85',  # 你的数据库主机，留空默认为localhost
+            'PORT': 3306, # 端口
+     }
 }
 
 
