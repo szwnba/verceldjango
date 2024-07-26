@@ -88,11 +88,10 @@ DATABASES = {
     # }
      'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'django',    #你的数据库名称
-            'USER': 'django',   #你的数据库用户名
-            'PASSWORD': "gtd123", #你的数据库密码
-            'HOST': '119.91.153.2', #你的数据库主机，留空默认为localhost
-            # 'HOST': '192.168.31.85',  # 你的数据库主机，留空默认为localhost
+            'NAME': 'szwnba',    #你的数据库名称
+            'USER': 'szwnba',   #你的数据库用户名
+            'PASSWORD': "119CX8eD0ZGHQ4cm", #你的数据库密码
+            'HOST': 'mysql.sqlpub.com', #你的数据库主机，留空默认为localhost
             'PORT': 3306, # 端口
      }
 }
